@@ -17,8 +17,8 @@ const AIChat = ({ patientData }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Your Gemini API key
-  const GEMINI_API_KEY = 'AIzaSyAobXSo3FREC11oxIJBbavWE-jaztrbq8M';
+  // Gemini API key
+ ------------------------------------------------------------------------------
 
   // Healthcare context with patient data
   const healthcareContext = `
