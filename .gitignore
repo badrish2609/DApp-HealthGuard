@@ -9,3 +9,8 @@ dist/
 
 # system files
 .DS_Store
+node_modules/
+.git/
+dist/
+build/
+*.log
