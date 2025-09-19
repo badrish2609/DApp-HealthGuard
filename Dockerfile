@@ -1,5 +1,5 @@
-# Build stage - Use Node.js with built-in corepack for yarn
-FROM node:18-alpine as build
+# Build stage - Use Node.js 20 for react-router-dom@7.9.1 compatibility
+FROM node:20-alpine as build
 
 WORKDIR /app
 
