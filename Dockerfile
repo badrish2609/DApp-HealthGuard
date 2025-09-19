@@ -22,11 +22,18 @@ FROM nginx:alpine
 # Copy the build output to nginx html directory
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Copy custom nginx configuration (optional)
+# Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Expose port 80
-EXPOSE 80
+# Create a startup script to handle Railway's PORT variable
+RUN echo '#!/bin/sh' > /docker-entrypoint.sh && \
+    echo 'PORT=${PORT:-80}' >> /docker-entrypoint.sh && \
+    echo 'sed -i "s/\${PORT}/$PORT/g" /etc/nginx/nginx.conf' >> /docker-entrypoint.sh && \
+    echo 'nginx -g "daemon off;"' >> /docker-entrypoint.sh && \
+    chmod +x /docker-entrypoint.sh
 
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Expose the port (Railway will set this dynamically)
+EXPOSE ${PORT:-80}
+
+# Start nginx with custom script
+CMD ["/docker-entrypoint.sh"]
