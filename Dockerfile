@@ -5,7 +5,9 @@ WORKDIR /app
 
 # Copy package files
 COPY package*.json ./
-RUN npm ci --only=production
+
+# Clean install with fixed npm flags and ignore platform-specific packages
+RUN npm ci --ignore-platform --ignore-engines --no-audit --no-fund
 
 # Copy source code
 COPY . .
