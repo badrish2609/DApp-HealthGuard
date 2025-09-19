@@ -1,22 +1,39 @@
-# Build stage - Use Yarn instead of npm (often handles platform issues better)
+# Build stage - Custom approach to handle fsevents
 FROM node:18-alpine as build
 
 WORKDIR /app
 
-# Install yarn
-RUN npm install -g yarn
-
 # Copy package files
 COPY package*.json ./
 
-# Use yarn which handles optional dependencies better
-RUN yarn install --ignore-optional --frozen-lockfile
+# Install Node.js dependencies, forcing platform compatibility
+RUN npm config set target_platform linux && \
+    npm config set target_arch x64 && \
+    npm install --force --no-audit --no-fund
 
 # Copy source code
 COPY . .
 
 # Build the app
-RUN yarn build
+RUN npm run build
+
+# Copy source code
+COPY . .
+
+# Build the app
+RUN npm run build
+
+# Copy source code
+COPY . .
+
+# Build the app
+RUN npm run build
+
+# Copy source code
+COPY . .
+
+# Build the app
+RUN npm run build
 
 # Production stage - Simple nginx setup
 FROM nginx:alpine
