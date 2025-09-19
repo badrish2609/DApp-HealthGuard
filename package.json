@@ -1,7 +1,7 @@
 {
   "name": "healthcareDapp",
   "version": "1.0.0",
-  "homepage": "https://badrish2609.github.io/DApp-HealthGuard",
+  "homepage": "./",
   "description": "A decentralized healthcare DApp",
   "main": "truffle-config.js",
   "scripts": {
