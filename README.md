@@ -1,12 +1,24 @@
 
 # DAppHealthGuard 🚑🔗
 
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-GitHub_Pages-success?style=for-the-badge)](https://badrish2609.github.io/DApp-HealthGuard)
+[![Live App](https://img.shields.io/badge/🌐_Live_App-Railway-blue?style=for-the-badge)](https://pleasant-tranquility-production.up.railway.app)
+
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
 ![Solidity](https://img.shields.io/badge/SmartContracts-Solidity-black?logo=solidity)
 ![Ethereum](https://img.shields.io/badge/Blockchain-Ethereum-3C3C3D?logo=ethereum)
 ![MetaMask](https://img.shields.io/badge/Web3-MetaMask-orange?logo=metamask)
 ![Machine Learning](https://img.shields.io/badge/AI%2FML-Integrated-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+## 🌐 Live Deployments
+
+| Platform | Status | URL | Description |
+|----------|---------|-----|-------------|
+| **GitHub Pages** | ✅ Active | [🚀 **VIEW LIVE DEMO**](https://badrish2609.github.io/DApp-HealthGuard) | Primary deployment - React frontend |
+| **Railway** | ✅ Active | [🌐 **VIEW LIVE APP**](https://pleasant-tranquility-production.up.railway.app) | Alternative deployment - Full stack |
+
+> **Click either link above to instantly view the live Healthcare DApp!**
 
 **DAppHealthGuard** is a decentralized healthcare management system that integrates **Blockchain, Machine Learning, and AI** to deliver secure, intelligent, and user-friendly healthcare solutions.
 
@@ -73,9 +85,32 @@ React Frontend ──> Smart Contracts ──> Blockchain (Ganache/Ethereum)
 
 ---
 
+## 🚀 Quick Start
+
+**🌟 Want to see it in action? Choose your preferred deployment:**
+
+### Option 1: GitHub Pages (Recommended)
+```
+👆 Click the "Live Demo" button above
+OR visit: https://badrish2609.github.io/DApp-HealthGuard
+```
+
+### Option 2: Railway Platform  
+```
+👆 Click the "Live App" button above  
+OR visit: https://pleasant-tranquility-production.up.railway.app
+```
+
+---
+
 ## 🚀 Deployment & Testing
 
-### Local Setup
+### 🌐 Production Deployments
+- **GitHub Pages**: Automatic deployment via GitHub Actions
+- **Railway**: Continuous deployment with Docker containerization
+- **Both platforms**: Sync automatically with this repository
+
+### 🔧 Local Development Setup
 
 ```bash
 # Start Ganache (local blockchain)
