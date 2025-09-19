@@ -16,11 +16,9 @@
 | Platform | Status | URL | Description |
 |----------|---------|-----|-------------|
 | **GitHub Pages** | ✅ Active | [🚀 **VIEW LIVE DEMO**](https://badrish2609.github.io/DApp-HealthGuard) | Primary deployment - React frontend |
-| **Railway** | 🔄 Deploying | [🌐 **URL Coming Soon**](#) | Alternative deployment - Full stack |
+| **Railway** | 🔄 Testing | [🌐 **VIEW RAILWAY APP**](https://dapp-healthguard-production.up.railway.app) | Alternative deployment - Full stack |
 
-> **Click the "VIEW LIVE DEMO" link above to instantly view the Healthcare DApp!**
-> 
-> *Railway deployment URL will be updated once deployment is complete.*
+> **GitHub Pages is working perfectly! Railway deployment updated with fixes - testing in progress.**
 
 **DAppHealthGuard** is a decentralized healthcare management system that integrates **Blockchain, Machine Learning, and AI** to deliver secure, intelligent, and user-friendly healthcare solutions.
 
@@ -91,16 +89,17 @@ React Frontend ──> Smart Contracts ──> Blockchain (Ganache/Ethereum)
 
 **🌟 Want to see it in action? Choose your preferred deployment:**
 
-### Option 1: GitHub Pages (✅ Working Now!)
+### Option 1: GitHub Pages (✅ Working Perfectly!)
 ```
 👆 Click the "Live Demo" button above
 OR visit: https://badrish2609.github.io/DApp-HealthGuard
 ```
 
-### Option 2: Railway Platform (🔄 Deploying)
+### Option 2: Railway Platform (🔄 Testing Fixes)
 ```
-Railway deployment in progress - URL will be updated once ready
-Check Railway dashboard for current status
+👆 Click the "Railway App" button above
+OR visit: https://dapp-healthguard-production.up.railway.app
+Wait 3-5 minutes for deployment to complete
 ```
 
 ---
