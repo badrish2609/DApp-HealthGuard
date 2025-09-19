@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DApp-HealthGuard/static/css/main.3b71cc2a.css",
+    "main.js": "/DApp-HealthGuard/static/js/main.b1793b68.js",
+    "static/js/488.bbb70461.chunk.js": "/DApp-HealthGuard/static/js/488.bbb70461.chunk.js",
+    "index.html": "/DApp-HealthGuard/index.html",
+    "main.3b71cc2a.css.map": "/DApp-HealthGuard/static/css/main.3b71cc2a.css.map",
+    "main.b1793b68.js.map": "/DApp-HealthGuard/static/js/main.b1793b68.js.map",
+    "488.bbb70461.chunk.js.map": "/DApp-HealthGuard/static/js/488.bbb70461.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b71cc2a.css",
+    "static/js/main.b1793b68.js"
+  ]
+}
