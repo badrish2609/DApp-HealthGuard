@@ -9,8 +9,8 @@ RUN corepack enable
 # Copy package files
 COPY package*.json ./
 
-# Use yarn with corepack - more reliable than installing yarn via npm
-RUN yarn install --ignore-optional --frozen-lockfile
+# Install dependencies - don't use --ignore-optional as it might exclude React
+RUN yarn install --frozen-lockfile
 
 # Copy source code
 COPY . .
