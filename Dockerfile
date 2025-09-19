@@ -6,13 +6,15 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Create .npmrc to exclude problematic packages
-RUN echo "optional=false" > .npmrc && \
-    echo "fund=false" >> .npmrc && \
-    echo "audit=false" >> .npmrc
-
 # Install dependencies without optional packages (fsevents is optional)
-RUN npm ci
+# Use the flag npm itself suggested in the warning
+RUN npm ci --omit=optional
+
+# Copy source code
+COPY . .
+
+# Build the app
+RUN npm run build
 
 # Copy source code
 COPY . .
